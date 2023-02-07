@@ -60,13 +60,13 @@ function Username() {
       <br />
       <button
         onClick={saveImg}    //ทำงานเมื่อ object นั้นถูกคลิก
-        className="bg-lime-600 hover:bg-lime-400  rounded-md w-28 h-10 text-white sm:ml-40 ml-14 text-xl shadow-lg shadow-yellow-400/40"
+        className="bg-lime-600 hover:bg-lime-400  rounded-md w-32 h-10 text-white sm:ml-40 ml-14 text-xl shadow-lg shadow-yellow-400/40"
       >
         ADD
       </button>{" "}
       <button
         onClick={changeImg}
-        className="bg-amber-500 hover:bg-amber-300  rounded-md w-28 h-10 text-white float-right sm:mr-40 mr-14 text-xl
+        className="bg-amber-500 hover:bg-amber-300  rounded-md w-32 h-10 text-white float-right sm:mr-40 mr-14 text-xl
         shadow-lg shadow-yellow-400/40 "
       >
         CHANGE
@@ -140,7 +140,7 @@ function Username() {
                 <div className=" flex justify-center pb-10 pt-5">
                   <button
                     onClick={() => deleteImg(index)} //ทำงานเมื่อ object นั้นถูกคลิก
-                    className="bg-rose-400 hover:bg-red-300  rounded-md w-28 h-10 text-white  shadow-lg shadow-orange-400/40 text-lg"
+                    className="bg-rose-400 hover:bg-red-300  rounded-md w-32 h-10 text-white  shadow-lg shadow-orange-400/40 text-lg"
                   >
                     DELETE
                   </button>

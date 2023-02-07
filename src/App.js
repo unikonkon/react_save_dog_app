@@ -11,7 +11,7 @@ export default function App() {
     <AuthProvider>
       <Routes>
         <Route element={<Layout />}>   
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route
             path="/protected"
             element={

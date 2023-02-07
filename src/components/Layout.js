@@ -19,7 +19,7 @@ function AuthStatus() {
   console.log("location ", location);
   console.log("user", auth.user);
 
-  if (location.pathname === "/login" && auth.user) {    // คำสั่ง if ถ้ามีข้อมูล location.pathname = หน้า Login และ authที่เข้าถึงuser
+  if (location.pathname === "/" && auth.user) {    // คำสั่ง if ถ้ามีข้อมูล location.pathname = หน้า Login และ authที่เข้าถึงuser
     return <Navigate to="protected" replace />;         // return แสดงหน้า protected
   }
    
@@ -37,8 +37,8 @@ function AuthStatus() {
         Username: {auth.user}{" "}
         <div className="pl-5">
           <button
-            className="bg-red-400 hover:bg-red-300 rounded-md w-20 
-          h-8 text-white text-lg sm:text-xl
+            className=" bg-red-400 hover:bg-red-300 rounded-md w-28 
+          h-9 text-white text-lg sm:text-xl
         shadow-lg shadow-orange-400/40 "
             onClick={() => {   //ทำงานเมื่อ object นั้นถูกคลิก
               auth.signout(() => navigate([]));
